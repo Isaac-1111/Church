@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Church</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Church Donation Page" />
+<meta name="keywords" content="church, donation, tithe, offering, HTML5, CSS3, Bootstrap, responsive" />
+<meta name="author" content="yourname" />
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
+
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- Style -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Modernizr JS -->
+<script src="js/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+
+<div class="fh5co-loader"></div>
+
+<div id="page">
+<nav class="fh5co-nav" role="navigation">
+  <div class="container-wrap">
+    <div class="top-menu">
+      <div class="row">
+        <div class="col-md-12 col-offset-0 text-center">
+          <div id="fh5co-logo"><a href="index.html">Church</a></div>
+        </div>
+        <div class="col-md-12 col-md-offset-0 text-center menu-1">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="donate.html">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container-wrap">
+  <aside id="fh5co-hero">
+    <div class="flexslider">
+      <ul class="slides">
+        <li style="background-image: url(images/call.jpg);">
+          <div class="overlay"></div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 text-center slider-text">
+                <div class="slider-text-inner">
+                  <h1>Donate to Our Church</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <div id="fh5co-donate">
+    <div class="row animate-box">
+      <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+        <h2>Make a Donation</h2>
+        <p>Your generous contributions help us continue our mission.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <form id="donation-form">
+          <div class="form-group">
+            <label for="donationType">Donation Type</label>
+            <select class="form-control" id="donationType" required>
+              <option value="offering">Offering</option>
+              <option value="tithe">Tithe</option>
+              <option value="donate">General Donation</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="amount">Amount</label>
+            <input type="number" class="form-control" id="amount" placeholder="Enter amount" required>
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-modify">Donate</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-wrap">
+    <footer id="fh5co-footer" role="contentinfo">
+      <div class="col-md-4 text-center">
+        <h3>1 Kenya</h3>
+      </div>
+      <div class="col-md-4 text-center">
+        <h2><a href="#">Church</a></h2>
+      </div>
+      <div class="col-md-4 text-center">
+        <p>
+          <ul class="fh5co-social-icons">
+            <li><a href="#"><i class="icon-twitter2"></i></a></li>
+            <li><a href="#"><i class="icon-facebook2"></i></a></li>
+            <li><a href="#"><i class="icon-dribbble2"></i></a></li>
+          </ul>
+        </p>
+      </div>
+      <div class="row copyright">
+        <div class="col-md-12 text-center">
+          <p>
+            <small class="block">&copy; copyright. All Rights Reserved.</small>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</div>
+
+<div class="gototop js-top">
+  <a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Form Validation -->
+<script>
+  document.getElementById('donation-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // Form validation and processing logic here
+    alert('Thank you for your donation!');
+  });
+</script>
+</body>
+</html>
